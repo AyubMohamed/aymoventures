@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AYMO Ventures Inc.</title>
-<meta name="description" content="AYMO Ventures Inc. is a Canadian software company building consumer products.">
+<meta name="description" content="AYMO Ventures Inc. is a Toronto software company that designs and publishes consumer mobile apps. Founded by Ayub Mohamed.">
 <meta name="theme-color" content="#0d0c0b">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230d0c0b'/><text x='50' y='68' font-family='system-ui,sans-serif' font-size='52' font-weight='600' fill='%23e8e3db' text-anchor='middle'>A</text></svg>">
 
 <meta property="og:title" content="AYMO Ventures Inc.">
-<meta property="og:description" content="A Canadian software company building consumer products.">
+<meta property="og:description" content="A Toronto software company that designs and publishes consumer mobile apps.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aymoventures.ca/">
 
@@ -125,6 +125,36 @@
     border-bottom-color: var(--accent);
   }
 
+  section {
+    margin: 2.5rem auto 0;
+    max-width: 28rem;
+    text-align: left;
+  }
+
+  section h2 {
+    margin: 0 0 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  section p, section dl {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--paper);
+  }
+
+  section p + p { margin-top: 0.75rem; }
+
+  dl { display: grid; grid-template-columns: max-content 1fr; column-gap: 1.25rem; row-gap: 0.35rem; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  dd a { color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
+  dd a:hover, dd a:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+
   footer {
     margin-top: 4.5rem;
     font-size: 0.75rem;
@@ -151,16 +181,42 @@
     <hr>
 
     <p class="line">
-      A Canadian software company building consumer products.
-      <span class="soon">Something new is coming.</span>
+      A Toronto software company that designs and publishes consumer mobile apps.
     </p>
 
-    <p class="contact">
-      <a href="mailto:hello@aymoventures.ca">hello@aymoventures.ca</a>
-    </p>
+    <section>
+      <h2>About</h2>
+      <p>
+        AYMO Ventures Inc. is a federally incorporated Canadian company based in Toronto, Ontario.
+        We design, build and publish our own consumer software, with a focus on mobile apps
+        for the App Store and Google Play.
+      </p>
+      <p>
+        We work in small releases: one product at a time, built in-house from design through
+        launch, and improved with the people who use it.
+      </p>
+    </section>
+
+    <section>
+      <h2>Company</h2>
+      <dl>
+        <dt>Legal name</dt><dd>AYMO Ventures Inc.</dd>
+        <dt>Incorporated</dt><dd>2024, Canada (federal)</dd>
+        <dt>Location</dt><dd>Toronto, Ontario, Canada</dd>
+        <dt>Founder &amp; director</dt><dd>Ayub Mohamed</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:ayub@aymoventures.ca">ayub@aymoventures.ca</a></dd>
+        <dt>Web</dt><dd><a href="https://aymoventures.ca">aymoventures.ca</a></dd>
+      </dl>
+    </section>
 
     <footer>
-      <span>AYMO Ventures Inc.</span><span class="dot">·</span><span>Toronto, Canada</span>
+      <span>AYMO Ventures Inc.</span><span class="dot">·</span><span>Toronto, Ontario, Canada</span>
       <br>
       <span>&copy; 2026 AYMO Ventures Inc.</span>
     </footer>
